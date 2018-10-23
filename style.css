@@ -1,0 +1,128 @@
+
+
+/*************Exercice carré rose *************/
+/* #rose {
+    width: 250px;
+    height: 250px;
+    background-color: deeppink;
+
+
+    -webkit-transition: all 500ms cubic-bezier(0.795, 0.195, 0.870, 1); /* older webkit */
+    /* -webkit-transition: all 500ms cubic-bezier(0.795, 0.195, 0.870, 1.440);
+    -moz-transition: all 500ms cubic-bezier(0.795, 0.195, 0.870, 1.440);
+    -o-transition: all 500ms cubic-bezier(0.795, 0.195, 0.870, 1.440); */
+    /* transition: all 500ms cubic-bezier(0.795, 0.195, 0.870, 1.440); /* custom
+} 
+*/
+
+/****************Exercice carré rouge************
+#rouge {
+    width: 100px;
+    height: 100px;
+    background-color:red;
+    margin : auto;
+}
+#button {
+    display: flex;
+    justify-content: center;
+}
+*/
+/****************Exercice SHIFUMI*************/
+* {
+    margin:0;
+    padding:0;
+}
+h1 {
+    text-align: center;
+    font-size: 80px;
+    margin-bottom: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+h2 {
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+section {
+    text-align: center;
+}
+
+p {
+    margin-top: 15px;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+#caillou {
+    border : solid 3px red;
+    border-radius: 100%;
+}
+
+#papier {
+    border : solid 3px green;
+    border-radius: 100%;
+}
+
+#ciseaux {
+    border : solid 3px blue;
+    border-radius: 100%;
+}
+
+.button {
+    width: 100%;
+    height: 30x;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.vs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 30px;
+}
+
+.bloc1 img {
+    width: 250px;
+    height: 250px;
+}
+
+.resultat {
+    border: solid 3px gray;
+    width: 60%;
+    height: 80px;
+    margin :auto;
+    margin-top: 20px;;
+}
+
+.vous { 
+    border: solid 3px black;
+    width: 200px;
+    height: 200px;
+}
+
+
+.IA { 
+    border: solid 3px black;
+    width: 200px;
+    height: 200px;
+}
+
+#rejouer {
+    margin-top: 10px;
+    background-color: rgba(247, 68, 238, 0.918);
+    color: white;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 2px 4px rgb(199, 192, 192);
+}
+#rejouer:hover {
+        background-color: rgb(103, 41, 184);
+}
