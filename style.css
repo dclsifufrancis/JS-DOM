@@ -1,128 +1,152 @@
-
-
-/*************Exercice carré rose *************/
-/* #rose {
-    width: 250px;
-    height: 250px;
-    background-color: deeppink;
-
-
-    -webkit-transition: all 500ms cubic-bezier(0.795, 0.195, 0.870, 1); /* older webkit */
-    /* -webkit-transition: all 500ms cubic-bezier(0.795, 0.195, 0.870, 1.440);
-    -moz-transition: all 500ms cubic-bezier(0.795, 0.195, 0.870, 1.440);
-    -o-transition: all 500ms cubic-bezier(0.795, 0.195, 0.870, 1.440); */
-    /* transition: all 500ms cubic-bezier(0.795, 0.195, 0.870, 1.440); /* custom
-} 
-*/
-
-/****************Exercice carré rouge************
-#rouge {
-    width: 100px;
-    height: 100px;
-    background-color:red;
-    margin : auto;
-}
-#button {
-    display: flex;
-    justify-content: center;
-}
-*/
-/****************Exercice SHIFUMI*************/
 * {
-    margin:0;
-    padding:0;
+    margin:0%;
+    padding:0%;
+}
+body {
+    background-color:#f4f3f1;
+    
 }
 h1 {
-    text-align: center;
-    font-size: 80px;
-    margin-bottom: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align:center;
+    height: 1em;
+    padding: 1em;
+    line-height: 1em;
     color: white;
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
-h2 {
-    color: white;
-    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-}
-section {
-    text-align: center;
-}
 
-p {
-    margin-top: 15px;
-    font-size: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
+.listeBouton {
+    display:flex;
+    justify-content:space-around; 
+    list-style:none;
 }
 
 
-#caillou {
-    border : solid 3px red;
-    border-radius: 100%;
+.lesBoutons {
+    padding:5%;
 }
 
-#papier {
-    border : solid 3px green;
-    border-radius: 100%;
+.bouton {
+    width:15%;
 }
-
+#pierre {
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    background-color:white;
+    box-shadow:3px 3px 10px grey;
+}
+#feuille {
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    background-color:white;
+    box-shadow:3px 3px 10px grey;
+}
 #ciseaux {
-    border : solid 3px blue;
-    border-radius: 100%;
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    background-color:white;
+    box-shadow:3px 3px 10px grey;
+}
+.faitChoix {
+    padding-top:12%;
+    padding-bottom:5%;
+    text-align:center;
+    color: black;
 }
 
-.button {
-    width: 100%;
-    height: 30x;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-around;
+.afficheImage {
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    width:100%;
+    padding-top:5%;
+    background-color: #C9C7C2;
 }
 
+.iconeChoix {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+}
 
-.vs {
+.titre {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 5%;;
+}
+
+#joueur {
+    background-size:cover;
+    background-color:white;
+    width:75%;
+    height:120px;
+    margin:5%;
+    border-radius:100%;
+    box-shadow:10px 0px 12px 0px grey;
+} 
+#afficheIa {
+    background-size:cover;
+    background-color:white;
+    width:75%;
+    height:120px;
+    margin:5%;
+    border-radius:100%;
+    box-shadow:10px 0px 12px 0px grey;
+}
+.afficheVersus {
+    width:25%;
+    margin-top:10%;
+    margin-left:5%;
+    margin-right:5%;
+}
+
+.imageVersus {
+    width:150%;
+}
+.titreResultat {
+    text-align:center;
+}
+#afficheResultat {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    font-size: 30px;
+    background-color:#FFFFFE;
+    width:90%;
+    margin:0.5em auto;
+    height:2.5em;
+    text-align:center;
+    border-radius:2%;
+    box-shadow: 5px 5px 10px 0px grey;
 }
 
-.bloc1 img {
-    width: 250px;
-    height: 250px;
+#boutonReJouer {
+    height:3.5em;
+    border-radius:3%;
+    color:white;
+    box-shadow: 5px 5px 10px 0px grey;
+    background-color:#A49F96;
+    border:none;
+    width: 100%;
 }
 
-.resultat {
-    border: solid 3px gray;
-    width: 60%;
-    height: 80px;
-    margin :auto;
-    margin-top: 20px;;
+.reset {
+    width: 35%;
+    text-align: center;
+    margin: 5% auto;
 }
 
-.vous { 
-    border: solid 3px black;
-    width: 200px;
-    height: 200px;
+.bas {
+    /*background-color: yellowgreen;*/
+    padding:5%;
 }
 
-
-.IA { 
-    border: solid 3px black;
-    width: 200px;
-    height: 200px;
+.titreIa {
+    margin-right: 1.8em;
 }
-
-#rejouer {
-    margin-top: 10px;
-    background-color: rgba(247, 68, 238, 0.918);
-    color: white;
-    padding: 10px 14px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    box-shadow: 2px 4px rgb(199, 192, 192);
-}
-#rejouer:hover {
-        background-color: rgb(103, 41, 184);
+.titreJoueur {
+    margin-left: 0.3em;
 }
